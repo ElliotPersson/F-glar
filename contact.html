@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KontaktFormulär</title>
 </head>
+
 <body>
 
     <header>
@@ -12,84 +14,118 @@
     </header>
 
     <nav>
-        <a href="index.html">Startsida</a> &nbsp; &nbsp; │ &nbsp; &nbsp; <a href="Faglar.html">Om fåglar</a> <a href="contact.html">contact</a>
+        <a href="index.html">Startsida</a> &nbsp; &nbsp; │ &nbsp; &nbsp; <a href="Faglar.html">Om fåglar</a> <a
+            href="contact.html">contact</a>
     </nav>
-    
+
     <h1></h1>
 
     <form action="#" method="get">
-      
-            <p>
+
+        <p>
 
             <label for="first_name">Ditt förnamn:</label> <br>
-        
-        <input type="text" name="first_name" id="first_name">
+
+            <input type="text" name="first_name" id="first_name">
         </p>
         <p>
 
-        
+
             <label for="last_name">Ditt efternamn:</label> <br>
             <input type="text" name="last_name" id="last_name">
-          </p>
-   
-      
-      
-      <p>
-        <label>Ange e-post: <br>
+        </p>
 
-            <input type="email" name="email" id="email">
-        </label> <br>
-    <br>
 
-        <input type="text" name="username" id="username" placeholder="Ditt användarnamn" required minlength="4" maxlength="20">
-    </p>
-  
+
+        <p>
+            <label>Ange e-post: <br>
+
+                <input type="email" name="email" id="email">
+            </label> <br>
+            <br>
+
+            <input type="text" name="username" id="username" placeholder="Ditt användarnamn" required minlength="4"
+                maxlength="20">
+        </p>
+
+
+        <p>
+            <label for="password">Ange lösenord</label> <br>
+            <input type="password" name="password" id="password">
+        </p>
+
+
+        <p>
+            <label for="checkbox">Ja</label>
+            <input type="radio" name="radio" id="radio"> <label for="checkbox">Nej</label>
+            <input type="radio" name="radio" id="radio">
+        </p>
+
+        <p>
+            <label for="date">datum</label>
+            <input type="date" name="date" id="date">
+
+        </p>
+        <br>
+        <p>Berätta om dig själv - personligt brev</p>
+        <textarea name="letter" id="letter" cols="30" rows="10"></textarea>
+
+
+        <p>
+            vilka språk föredrar du: <br>
+
+            <select name="languages" id="languages" multiple size="3">
+                <option value="HTML">HTML - Hyper Text Markup Language</option>
+                <option value="Swedish">Svenska</option>
+                <option value="English">Engelska</option>
+                <option value="secret">Rövarspråket</option>
+            </select>
+        </p>
+
+
+
+        <input type="submit" value="skicka">
+
+        <input type="reset" value="Börja om">
+
+        <button type="reset">nollställ</button>
+
+    </form>
+    <hr>
+    <form action="" method="get" id="newsletter">
+        <h3>Intresserad av nyhetsbrev?</h3>
+        <p>
+            Webplatsen kan ge dig återkommande info i form av ett nyhetsbrev - anmäl dig här
+        </p>
+        <p>
+
+            <input type="email" name="email" id="email" required placeholder="Ange epost adress för nyhetsbrev" size="50">
+        </p>
+        <p> <button type="submit">Jag vill få nyheter från webplatsen</button></p>
+       <fieldset>
+        <legend>Vilka husdjur är du intresserad av?</legend>
+        <div>
+        <label for="pets_dogs">Hundar</label>
+        <input type="checkbox" name="Pets" id="Dogs">
+        </div>
+
+        <div>
+        <label for="pets_cats">Katter</label>
+        <input type="checkbox" name="Pets" id="Cats">
+        </div>
+
+        <div>
+        <label for="pets_fish">Fiskar</label>
+        <input type="checkbox" name="Pets" id="Fish">
+        </div>
+    </fieldset>
     
-<p>
-    <label for="password">Ange lösenord</label> <br>
-<input type="password" name="password" id="password">
-</p>
+    </form>
 
-
-<p>
-<label for="checkbox">Ja</label> 
-<input type="radio" name="radio" id="radio">  <label for="checkbox">Nej</label> 
-<input type="radio" name="radio" id="radio">
-</p> 
-
-<p>
-<label for="date">datum</label>
-<input type="date" name="date" id="date">
-
-</p>
-<br>
-<p>Berätta om dig själv - personligt brev</p> 
-<textarea name="letter" id="letter" cols="30" rows="10"></textarea>
-
-
-<p>
-    vilka språk föredrar du: <br>
-
-    <select name="languages" id="languages" multiple size="3">
-        <option value="HTML">HTML - Hyper Text Markup Language</option>
-        <option value="Swedish">Svenska</option>
-        <option value="English">Engelska</option>
-        <option value="secret">Rövarspråket</option>
-    </select>
-</p>
-
-
-
-<p>
-    <input type="submit" value="skicka">
-</p>
-
-
-
-</form>
 
     <footer>
 
     </footer>
 </body>
+
 </html>
